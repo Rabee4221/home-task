@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="mailto::test@test.ua?subject=Заголовок%20письма&body=Наше%20тело%20письма">send our letter</a>
+    <form action="mailto:test@test.ua">
+        <input type="text" name="firstname" style="width:100%" placeholder="ваше имя">
+        <br>
+        <br>
+        <input type="text" name="lastname" style="width:100%" placeholder="ваше фамилия">
+        <br>
+        <br>
+
+        ваш пол
+        <input type="radio" name="sex" id="sex_man" value="man">
+        <label for="sex_man">мужской</label>
+        <input type="radio" name="sex" id="sex_women" value="women">
+        <label for="sex_women">женский</label>
+        <br>
+
+        вам больше 18 лет?
+        <input type="radio" name="age" id="age_yes" value="yes">
+        <label for="age_yes">да</label>
+        <input type="radio" name="age" id="age_no" value="no">
+        <label for="age_no">нет</label>
+
+        <br>
+
+
+        <label>
+            <input type="radio" name="age_1" value="yes">
+            da
+        </label>
+
+
+        <label>
+            <input type="radio" name="age_1" value="no">
+            net
+        </label>
+
+
+        <br>
+        Ваш город
+        <select name="city" style="width: 100%">
+            <option value="chernihiv">Чернигов</option>
+            <option value="Kyiv">Киев</option>
+            <option value="Odessa">Одесса</option>
+            <option value="" disabled selected hidden>Выберите город</option>
+        </select>
+        <br>
+        Доп. инфо
+        <textarea name="details" style="width: 100%" height="100px" placeholder="введите текст"></textarea>
+        <br>
+
+
+        <input type="submit" value="send email">
+
+    </form>
+</body>
+
+</html>
